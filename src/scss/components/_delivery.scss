@@ -1,0 +1,16 @@
+.delivery {
+    .home & {
+        @apply absolute bottom-0 right-0 z-40;
+        width: calc((((100% - var(--site-width)) / 2) + var(--site-width)) - var(--width-wrapper-logo));
+    }
+
+    li {
+        @apply flex justify-between items-center p-4 text-lg;
+
+        svg, img { @apply mr-1; }
+
+        span {
+            @apply text-tertiary;
+        }
+    }
+}

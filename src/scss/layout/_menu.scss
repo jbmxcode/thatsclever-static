@@ -4,13 +4,14 @@
 }
 
 .primary-menu {
+    @apply flex items-center w-full h-full;
+
     .menu {
-        display: flex;
+        @apply flex justify-center items-center w-full h-full;
     }
 
     .menu li a {
-        font-weight: 700;
-        text-transform: uppercase;
-        color: var(--tertiary-color);
+        @apply font-bold uppercase text-tertiary;
+        padding: 0 1.875rem;
     }
 }

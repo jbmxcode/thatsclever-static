@@ -22,10 +22,16 @@ module.exports = {
             },
             fontFamily: {
                 primary: 'Roboto, sans-serif',
-                secondary: 'Comfortaa cursive',
+                secondary: 'Comfortaa, cursive',
             },
             flex: {
                 2: '2 2 0%',
+            },
+            opacity: {
+                3: '0.03',
+            },
+            letterSpacing: {
+                bigger: '0.6em',
             },
             textColor: (theme) => ({
                 ...theme('colors'),

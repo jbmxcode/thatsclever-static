@@ -1,0 +1,37 @@
+.section-hero {
+    &:before,
+    &:after {
+        @apply absolute top-0 h-full;
+        content: "";
+    }
+
+    &:before {
+        @apply right-0 bg-primary;
+        width: calc(100% - var(--site-width));
+    }
+
+    &:after {
+        @apply left-0 bg-white;
+        width: calc(((100% - #{var(--site-width)}) / 2) + var(--width-wrapper-logo));
+    }
+
+    .title {
+        max-width: 565px;
+        width: 100%;
+        font-size: 4.1875rem;
+
+        &:after {
+            content: "";
+            width: 166px;
+            height: 1px; 
+            margin: 1rem 0 2rem;
+            background-color: var(--tertiary-color);
+        }
+    }
+
+    .video {
+        .text {
+            @apply block top-1/2 left-full;
+        }
+    }
+}
