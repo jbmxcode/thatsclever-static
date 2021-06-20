@@ -15,7 +15,7 @@ module.exports = merge(webpackConfiguration, {
         contentBase: environment.paths.output,
         watchContentBase: true,
         publicPath: '/',
-        open: true,
+        open: false,
         historyApiFallback: true,
         compress: true,
         overlay: true,

@@ -7,55 +7,59 @@
     <meta name="description" content="That's Clever Ecommerce">
     <title>Document</title>
 </head>
-<body>
-    <header class="site-header" aria-label="Main Site Header">
-        <div class="site-header__row">
-            <div class="site-header__row-inner">
-                <div class="site-title">
+<body class="home">
+    <header class="site-header w-full bg-primary lg:h-header" aria-label="Main Site Header">
+        <div class="container mx-auto">
+            <div class="w-full flex justify-between items-center">
+                <div class="flex justify-center items-center bg-white lg:h-header lg:justify-start lg:w-wrapperLogo">
                     <a href="/">
-                        <span>That's Clever</span>
+                        <span class="sr-only">That's Clever</span>
+                        <img src="images/thatsclevere-logo.png" alt="That's Clever Logo">
                     </a>
                 </div>
-
-                <div class="site-primary-menu">
-                    <nav class="primary-menu">
-                        <ul class="items-list">
+                <div class="primary-menu-wrapper absolute top-0 bottom-0 my-auto lg:bg-black lg:bg-opacity-5 lg:h-20">
+                    <nav class="primary-menu w-full h-full flex items-center">
+                        <ul class="menu w-full h-full flex justify-around items-center">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="index.html">Shop</a></li>
                             <li><a href="index.html">Clever Blog</a></li>
                             <li><a href="index.html">About</a></li>
                             <li><a href="index.html">Contact</a></li>
-                            <li><a href="index.html"><span class="sr-only">Search</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="site-header-actions">
-                    <nav class="header-actions">
-                        <ul class="items-list">
-                            <li>
-                                <span class="text"><strong>Cart</strong> 0 / <strong>£0.00</strong></span>
-                            </li>
-                            <li>
-                                <span class="icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" fill="#01A6AE"/>
-                                    </svg>
-                                </span>
-                                <span class="text">(0)</span>
-                            </li>
-                            <li>
-                                <span class="icon">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.66663 20.1667C3.66663 18.2217 4.43924 16.3565 5.81451 14.9812C7.18978 13.6059 9.05504 12.8333 11 12.8333C12.9449 12.8333 14.8101 13.6059 16.1854 14.9812C17.5607 16.3565 18.3333 18.2217 18.3333 20.1667H16.5C16.5 18.708 15.9205 17.309 14.889 16.2776C13.8576 15.2461 12.4586 14.6667 11 14.6667C9.54127 14.6667 8.14232 15.2461 7.11087 16.2776C6.07942 17.309 5.49996 18.708 5.49996 20.1667H3.66663ZM11 11.9167C7.96121 11.9167 5.49996 9.45541 5.49996 6.41666C5.49996 3.37791 7.96121 0.916656 11 0.916656C14.0387 0.916656 16.5 3.37791 16.5 6.41666C16.5 9.45541 14.0387 11.9167 11 11.9167ZM11 10.0833C13.0258 10.0833 14.6666 8.44249 14.6666 6.41666C14.6666 4.39082 13.0258 2.74999 11 2.74999C8.97413 2.74999 7.33329 4.39082 7.33329 6.41666C7.33329 8.44249 8.97413 10.0833 11 10.0833Z" fill="#01A6AE"/>
-                                    </svg>    
-                                    <span class="text sr-only">User</span>          
-                                </span>              
+                            <li><a href="index.html">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.0311 14.617L20.3141 18.899L18.8991 20.314L14.6171 16.031C13.0238 17.3082 11.042 18.0029 9.00004 18C4.03202 18 0 13.968 0 9C0 4.032 4.03202 0 9.00004 0C13.9681 0 18.0001 4.032 18.0001 9C18.003 11.042 17.3083 13.0237 16.0311 14.617ZM14.0251 13.875C15.2942 12.5699 16.0029 10.8204 16.0001 9C16.0001 5.132 12.8671 2 9.00004 2C5.13202 2 2.00001 5.132 2.00001 9C2.00001 12.867 5.13202 16 9.00004 16C10.8205 16.0029 12.5699 15.2941 13.8751 14.025L14.0251 13.875Z" fill="#3A3B3C"/></svg>
+                                <span class="sr-only">Search</span></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
+        </div>
+
+        <div class="header-actions-wrapper w-headerActions absolute top-0 bottom-0 right-0 my-auto bg-white h-20">
+            <nav class="w-full h-full">
+                <ul class="flex justify-between items-center w-full h-full">
+                    <li class="flex-2 flex justify-center items-center">
+                        <span class="text"><strong>Cart</strong> 0 / <strong>£0.00</strong></span>
+                    </li>
+                    <li class="flex-1 flex justify-center items-center">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" fill="#3A3B3C"/>
+                            </svg>                                
+                        </span>
+                        <span class="text">(0)</span>
+                    </li>
+                    <li class="header-action-user flex justify-center items-center h-full bg-black bg-opacity-5">
+                        <span class="icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.6665 20.1667C3.6665 18.2217 4.43912 16.3565 5.81439 14.9812C7.18965 13.6059 9.05492 12.8333 10.9998 12.8333C12.9448 12.8333 14.81 13.6059 16.1853 14.9812C17.5606 16.3565 18.3332 18.2217 18.3332 20.1667H16.4998C16.4998 18.708 15.9204 17.309 14.8889 16.2776C13.8575 15.2461 12.4585 14.6667 10.9998 14.6667C9.54115 14.6667 8.1422 15.2461 7.11075 16.2776C6.0793 17.309 5.49984 18.708 5.49984 20.1667H3.6665ZM10.9998 11.9167C7.96109 11.9167 5.49984 9.45541 5.49984 6.41666C5.49984 3.37791 7.96109 0.916656 10.9998 0.916656C14.0386 0.916656 16.4998 3.37791 16.4998 6.41666C16.4998 9.45541 14.0386 11.9167 10.9998 11.9167ZM10.9998 10.0833C13.0257 10.0833 14.6665 8.44249 14.6665 6.41666C14.6665 4.39082 13.0257 2.74999 10.9998 2.74999C8.974 2.74999 7.33317 4.39082 7.33317 6.41666C7.33317 8.44249 8.974 10.0833 10.9998 10.0833Z" fill="#3A3B3C"/>
+                            </svg>                                   
+                            <span class="text sr-only">User</span>          
+                        </span>              
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>    
 

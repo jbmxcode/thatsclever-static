@@ -1,0 +1,16 @@
+.primary-menu-wrapper {
+    right: var(--width-header-actions);
+    width: calc((100% - var(--width-header-actions)) - var(--width-wrapper-logo) - ((100% - var(--site-width)) / 2));
+}
+
+.primary-menu {
+    .menu {
+        display: flex;
+    }
+
+    .menu li a {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--tertiary-color);
+    }
+}
