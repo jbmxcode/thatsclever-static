@@ -46,7 +46,8 @@
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "http-server": "^0.12.3",
-    "postcss-import": "^14.0.2"
+    "postcss-import": "^14.0.2",
+    "swiper": "^6.7.0"
   },
   "engines": {
     "node": "^12 || >=14"
