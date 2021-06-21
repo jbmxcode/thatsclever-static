@@ -1,5 +1,6 @@
 .section-news {
-    @apply relative;
+    @apply relative pb-24;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%);
 
     .item {
         &:last-child { @apply flex justify-center items-center; }

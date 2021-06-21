@@ -11,3 +11,20 @@
 .header-action-user {
     width: 82px;
 }
+
+.primary-menu-wrapper {
+    right: var(--width-header-actions);
+    width: calc((100% - var(--width-header-actions)) - var(--width-wrapper-logo) - ((100% - var(--site-width)) / 2));
+}
+
+.primary-menu {
+    @apply flex items-center w-full h-full;
+
+    .menu {
+        @apply flex justify-center items-center w-full h-full;
+    }
+
+    .menu li a {
+        @apply font-bold uppercase text-tertiary px-8;
+    }
+}
