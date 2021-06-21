@@ -1,20 +1,21 @@
 :root {
-    --vp-small				: 320px;	// small size 
-    --vp-mid				: 768px;	// mid size
-    --vp-large				: 1024px;	// large size
-    --vp-max				: 1350px;	// max viewport
-    --site-width            : 1524px;
+    --vp-small				        : 320px;	// small size 
+    --vp-mid				        : 768px;	// mid size
+    --vp-large				        : 1024px;	// large size
+    --vp-max				        : 1350px;	// max viewport
+    --site-width                    : 1524px;
 
-    --width-wrapper-logo    : 477px;
-    --width-header-actions  : 316px;
-    --height-header         : 100px;
+    --width-wrapper-logo            : 477px;
+    --width-wrapper-logo-mobile     : 144px;
+    --width-header-actions          : 316px;
+    --height-header                 : 100px;
 
-    --base-font-size		: 16px;
-    --primary-font          : 'Roboto', sans-serif;
-    --secondary-font        : 'Comfortaa', cursive;
+    --base-font-size		        : 16px;
+    --primary-font                  : 'Roboto', sans-serif;
+    --secondary-font                : 'Comfortaa', cursive;
     
-    --primary-color         : rgb(255, 235, 13);
-    --secondary-color       : rgb(130, 128, 127);
-    --tertiary-color        : rgb(58, 59, 60);
-    --grey                  : rgb(158, 158, 158);
+    --primary-color                 : rgb(255, 235, 13);
+    --secondary-color               : rgb(130, 128, 127);
+    --tertiary-color                : rgb(58, 59, 60);
+    --grey                          : rgb(158, 158, 158);
 }

@@ -8,16 +8,24 @@
     <title>Document</title>
 </head>
 <body class="home">
-    <header class="site-header w-full bg-primary lg:h-header" aria-label="Main Site Header">
-        <div class="container mx-auto">
-            <div class="w-full flex justify-between items-center">
-                <div class="flex justify-center items-center bg-white lg:h-header lg:justify-start lg:w-wrapperLogo">
+    <header class="site-header flex justify-between w-full bg-primary lg:py-0 lg:h-header" aria-label="Main Site Header">
+        <div class="lg:container lg:mx-auto">
+            <div class="site-branding w-full flex justify-between h-full items-center">
+                <div class="site-logo flex justify-center items-center bg-white w-wrapperLogoMobile h-full lg:h-header lg:justify-start lg:w-wrapperLogo">
                     <a href="/">
                         <span class="sr-only">That's Clever</span>
                         <img src="images/thatsclevere-logo.png" alt="That's Clever Logo">
                     </a>
                 </div>
-                <div class="primary-menu-wrapper absolute top-0 bottom-0 my-auto lg:bg-black lg:bg-opacity-3 lg:h-20">
+                <div class="primary-menu-wrapper absolute z-50 top-2.5 bottom-0 my-auto lg:bg-black lg:bg-opacity-3 lg:h-20">
+                    <button class="btn-menu-toggle flex justify-center items-center bg-secondary h-full lg:hidden">
+                        <span class="sr-only">Main Menu Toggle</span>
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H15C15.2652 0 15.5196 0.105357 15.7071 0.292893C15.8946 0.48043 16 0.734784 16 1C16 1.26522 15.8946 1.51957 15.7071 1.70711C15.5196 1.89464 15.2652 2 15 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1Z" fill="white"/>
+                            <path d="M0 13C0 12.7348 0.105357 12.4804 0.292893 12.2929C0.48043 12.1054 0.734784 12 1 12H15C15.2652 12 15.5196 12.1054 15.7071 12.2929C15.8946 12.4804 16 12.7348 16 13C16 13.2652 15.8946 13.5196 15.7071 13.7071C15.5196 13.8946 15.2652 14 15 14H1C0.734784 14 0.48043 13.8946 0.292893 13.7071C0.105357 13.5196 0 13.2652 0 13Z" fill="white"/>
+                            <path d="M7 6C6.73478 6 6.48043 6.10536 6.29289 6.29289C6.10536 6.48043 6 6.73478 6 7C6 7.26522 6.10536 7.51957 6.29289 7.70711C6.48043 7.89464 6.73478 8 7 8H15C15.2652 8 15.5196 7.89464 15.7071 7.70711C15.8946 7.51957 16 7.26522 16 7C16 6.73478 15.8946 6.48043 15.7071 6.29289C15.5196 6.10536 15.2652 6 15 6H7Z" fill="white"/>
+                        </svg> 
+                    </button>    
                     <nav class="primary-menu">
                         <ul class="menu">
                             <li><a href="index.html">Home</a></li>
@@ -36,17 +44,15 @@
             </div>
         </div>
 
-        <div class="header-actions-wrapper w-headerActions absolute top-0 bottom-0 right-0 my-auto bg-white h-20">
+        <div class="header-actions-wrapper my-2.5 pl-2 bg-white h-10 text-xs flex-1 lg:flex-none lg:absolute lg:top-0 lg:bottom-0 lg:right-0 lg:h-20 lg:mr-0 lg:w-headerActions lg:ml-0 lg:text-base">
             <nav class="w-full h-full">
                 <ul class="flex justify-between items-center w-full h-full">
-                    <li class="flex-2 flex justify-center items-center">
+                    <li class="flex justify-center items-center h-full lg:flex-2">
                         <span class="text"><strong>Cart</strong> 0 / <strong>£0.00</strong></span>
                     </li>
-                    <li class="flex-1 flex justify-center items-center">
-                        <span class="icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" fill="#3A3B3C"/>
-                            </svg>                                
+                    <li class="flex justify-center items-center h-full lg:flex-1">
+                        <span class="icon-star">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5c-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1l-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2c17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9l183.7-179.1c5-4.9 8.3-11.3 9.3-18.3c2.7-17.5-9.5-33.7-27-36.3z"/></svg>                               
                         </span>
                         <span class="text">(0)</span>
                     </li>

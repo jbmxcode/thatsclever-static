@@ -8,6 +8,7 @@ module.exports = {
         extend: {
             width: {
                 wrapperLogo: '477px',
+                wrapperLogoMobile: '144px',
                 headerActions: '316px',
             },
             screens: {
