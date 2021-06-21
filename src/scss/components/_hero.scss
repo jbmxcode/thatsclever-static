@@ -30,8 +30,6 @@
     }
 
     .video {
-        .text {
-            @apply block top-1/2 left-full;
-        }
+        .text { @apply block top-1/2 left-full; }
     }
 }

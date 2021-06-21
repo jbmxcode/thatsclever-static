@@ -84,7 +84,7 @@
                                 <span class="flex justify-center items-center font-light text-sm text-center tracking-bigger text-tertiary lg:w-60 lg:absolute lg:left-full lg:top-0 lg:bottom-0 lg:my-auto">Watch Video</span>
                             </div>
                         </figure>
-                        <div class="flex flex-col px-8">
+                        <div class="flex flex-col px-8 mb-24">
                             <h2 class="flex flex-col title font-secondary text-tertiary" id="header_section_hero">
                                 <span>Everything that makes you think</span>
                                 <span>"Thats Clever"</span>
@@ -126,76 +126,80 @@
                 </section>
 
                 <section class="section section-products products-v1" aria-labelledby="header_section_products-v1">
-                    <div class="inner-section">
-                        <div class="title-wrapper">
-                            <h2 class="section-products-title title" id="header_section_products-v1">Latest Arrivals</h2>
-                            <h3 class="subtitle">Lorem ipsum dolor, sit amet</h3>
+                    <div class="container mx-auto">
+                        <div class="flex flex-col items-center text-center py-40">
+                            <h2 class="mb-2 pb-2 font-light text-secondary text-2xl dots-divide" id="header_section_products-v1">Latest Arrivals</h2>
+                            <h3 class="font-medium text-4/5xl text-tertiary">Lorem ipsum dolor, sit amet</h3>
                         </div>
                         <div class="content-wrapper">
                             <div class="swiper-container sw1">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <article class="item-product" aria-labelledby="item_product_1">   
-                                            <figure class="item-product__image">                                        
-                                                <picture>
-                                                    <source srcset="images/products/product1.webp" type="image/webp">
-                                                    <source srcset="images/products/product1.jpg" type="image/jpeg">
-                                                    <img src="images/products/product1.jpg" alt="Product 1" class="img-fluid">
-                                                </picture>
-                                            </figure> 
-                                            <div class="item-product__summary">
-                                                <div class="price">£39.00</div>
-                                                <h4 class="product-title title" id="item_product_1">Slim Safety Light – TC972 – Pack of 2</h4>
-                                                <div class="action-links">
-                                                    <a href="index.html" class="action action-primary">
-                                                        Shop Now 
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
-                                                    </a>
+                                        <div class="slide-inner">
+                                            <article class="item-product" aria-labelledby="item_product_1">   
+                                                <figure class="item-product__image">                                        
+                                                    <picture>
+                                                        <source srcset="images/products/product1.webp" type="image/webp">
+                                                        <source srcset="images/products/product1.jpg" type="image/jpeg">
+                                                        <img src="images/products/product1.jpg" alt="Product 1">
+                                                    </picture>
+                                                </figure> 
+                                                <div class="item-product__summary">
+                                                    <div class="item-product__summary-inner">
+                                                        <div class="product-price">£39.00</div>
+                                                        <h4 class="product-name" id="item_product_1">Slim Safety Light – TC972 – Pack of 2</h4>
+                                                    </div>
+                                                    <div class="action-links">
+                                                        <a href="index.html" class="product-link">
+                                                            Shop Now 
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <article class="item-product" aria-labelledby="item_product_2">   
-                                            <figure class="item-product__image">
-                                                <picture>
-                                                    <source srcset="images/products/product2.webp" type="image/webp">
-                                                    <source srcset="images/products/product2.jpg" type="image/jpeg">
-                                                    <img src="images/products/product2.jpg" alt="Product 2" class="img-fluid">
-                                                </picture>
-                                            </figure>                                         
-                                            <div class="item-product__summary">
-                                                <div class="price">£39.00</div>
-                                                <h4 class="product-title title" id="item_product_2">Duo Cog Clock</h4>
-                                                <div class="action-links">
-                                                    <a href="index.html" class="action action-primary">
-                                                        Shop Now 
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
-                                                    </a>
+                                            </article>
+                                            <article class="item-product" aria-labelledby="item_product_2">   
+                                                <figure class="item-product__image">
+                                                    <picture>
+                                                        <source srcset="images/products/product2.webp" type="image/webp">
+                                                        <source srcset="images/products/product2.jpg" type="image/jpeg">
+                                                        <img src="images/products/product2.jpg" alt="Product 2">
+                                                    </picture>
+                                                </figure>                                         
+                                                <div class="item-product__summary">
+                                                    <div class="item-product__summary-inner">
+                                                        <div class="product-price">£39.00</div>
+                                                        <h4 class="product-name" id="item_product_2">Duo Cog Clock</h4>
+                                                    </div>
+                                                    <div class="action-links">
+                                                        <a href="index.html" class="product-link">
+                                                            Shop Now 
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <article class="item-product" aria-labelledby="item_product_3">         
-                                            <figure class="item-product__image">
-                                                <picture>
-                                                    <source srcset="images/products/product3.webp" type="image/webp">
-                                                    <source srcset="images/products/product3.jpg" type="image/jpeg">
-                                                    <img src="images/products/product3.jpg" alt="Product 3" class="img-fluid">
-                                                </picture>
-                                            </figure>                                   
-                                            <div class="item-product__summary">
-                                                <div class="price">£36.00</div>
-                                                <h4 class="product-title title" id="item_product_3">Spiral Clock</h4>
-                                                <div class="action-links">
-                                                    <a href="index.html" class="action action-primary">
-                                                        Shop Now 
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
-                                                    </a>
+                                            </article>
+                                            <article class="item-product" aria-labelledby="item_product_3">         
+                                                <figure class="item-product__image">
+                                                    <picture>
+                                                        <source srcset="images/products/product3.webp" type="image/webp">
+                                                        <source srcset="images/products/product3.jpg" type="image/jpeg">
+                                                        <img src="images/products/product3.jpg" alt="Product 3">
+                                                    </picture>
+                                                </figure>                                   
+                                                <div class="item-product__summary">
+                                                    <div class="item-product__summary-inner">
+                                                        <div class="product-price">£36.00</div>
+                                                        <h4 class="product-name" id="item_product_3">Spiral Clock</h4>
+                                                    </div>
+                                                    <div class="action-links">
+                                                        <a href="index.html" class="product-link">
+                                                            Shop Now 
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </article>
+                                            </article>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-button-prev"></div>
@@ -205,58 +209,59 @@
                     </div>
                 </section>                
 
-                <section class="section section-spotlight" aria-labelledby="header_section_spotlight">
-                    <div class="inner-section">                        
-                        <figure class="spotlight-image">                                        
+                <section class="section section-spotlight relative mt-60" aria-labelledby="header_section_spotlight">
+                    <div class="container mx-auto">                        
+                        <figure class="lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full">                                        
                             <picture>
                                 <source srcset="images/spotlight/spotlight.webp" type="image/webp">
                                 <source srcset="images/spotlight/spotlight.jpg" type="image/jpeg">
-                                <img src="images/spotlight/spotlight.jpg" alt="Spotlight Image" class="img-fluid">
+                                <img src="images/spotlight/spotlight.jpg" alt="Spotlight Image" class="max-w-full w-full">
                             </picture>
                         </figure> 
 
-                        <div class="content-wrapper">
-                            <h2 class="spotlight-title title" id="header_section_spotlight">That’s Clever – Carefully selected Useful and Creative Products from around the Globe that will inspire you.</h2>
-                            <div class="text">
+                        <div class="relative z-10">
+                            <h2 class="spotlight-title dots-divide w-full font-light lg:text-4/5xl pb-4 mb-4 lg:pb-12 lg:mb-12" id="header_section_spotlight">That's Clever – Carefully selected Useful and Creative Products from around the Globe that will inspire you.</h2>
+                            <div class="spotlight-text flex flex-col relative bg-white rounded-xl p-4 text-tertiary lg:pl-0 lg:pr-12 lg:py-8 text-2xl font-light">
                                 <p>Our shop has two very definitive sections:</p>
 
-                                <p>That’s Creative for unusual art, artisan accessories and carefully handcrafted designs. We offer a wide variety of products with unique twists that will give your home that special focal point of creativity.</p>
+                                <p>That's Creative for unusual art, artisan accessories and carefully handcrafted designs. We offer a wide <strong>variety of products</strong> with unique twists that will give your home that special focal point of creativity.</p>
                                     
-                                <p>That’s Useful is what it says on the can. The latest gadgets within the gadget shop, home lighting, home aids and travel accessories that will prompt the saying “How did I manage before?”</p>
+                                <p>That's Useful is what it says on the can. The latest gadgets within the gadget shop, home lighting, home aids and travel accessories that will prompt the saying <strong>"How did I manage before?"</strong></p>
                                     
                                 <p>Our Blog, Images and Factoids, provide that little bit of light relief and a talking point to de-stress from the modern world.</p>
-                            </div>
-                            <div class="action-links">
-                                <a href="index.html" class="action action-secondary">
-                                    start shopping
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
-                                </a>
+
+                                <div class="action-links w-full lg:absolute lg:bottom-24 lg:left-full lg:ml-4">
+                                    <a href="index.html" class="spotlight-link w-full inline-flex justify-around items-center bg-primary text-tertiary uppercase font-light py-8 px-4 text-base">
+                                        <span class="flex-none">start shopping</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7812 11.3334L11.2052 7.75736L12.1478 6.8147L17.3332 12L12.1478 17.1854L11.2052 16.2427L14.7812 12.6667H6.6665V11.3334H14.7812Z" fill="#3A3B3C"/></svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <section class="section section-features" aria-labelledby="header_section_features">
-                    <div class="inner-section">
-                        <h2 class="features-title title sr-only">Features</h2>
-
-                        <div class="content">
-                            <article class="item" aria-labelledby="header_item_feature1">
-                                <h3 class="features-title title" id="header_item_feature1"><strong>Fast</strong> Delivery</h3>
-                                <div class="text">
-                                    <p>Be assured that if you order, we are going to do everything we can to get it to you as soon as with can with the highest quality.</p>
+                        <div class="features pt-10 pb-80 flex lg:justify-between">
+                            <article class="item relative w-full" aria-labelledby="header_item_feature1">
+                                <div class="item-inner relative z-10 h-full bg-white rounded-4xl px-10 flex flex-col justify-end">
+                                    <div class="features-summary">
+                                        <h3 class="features-title" id="header_item_feature1"><strong>Fast</strong> Delivery</h3>
+                                        <p>Be assured that if you order, we are going to do everything we can to get it to you as soon as with can with the highest quality.</p>
+                                    </div>
                                 </div>
                             </article>
-                            <article class="item" aria-labelledby="header_item_feature2">
-                                <h3 class="features-title title" id="header_item_feature2"><strong>Secure</strong> Checkout</h3>
-                                <div class="text">
-                                    <p>High security payment checkout for your confidence in us.</p>
+                            <article class="item relative w-full" aria-labelledby="header_item_feature2">
+                                <div class="item-inner relative z-10 h-full bg-white rounded-4xl px-10 flex flex-col justify-end">
+                                    <div class="features-summary">
+                                        <h3 class="features-title" id="header_item_feature2"><strong>Secure</strong> Checkout</h3>
+                                        <p>High security payment checkout for your confidence in us.</p>
+                                    </div>
                                 </div>
                             </article>
-                            <article class="item" aria-labelledby="header_item_feature3">
-                                <h3 class="features-title title" id="header_item_feature3"><strong>Free</strong> Returns</h3>
-                                <div class="text">
-                                    <p>If you have any issues with any of the products that you have bought from ourselves, then please contact us via email or phone and we will be happy to help and get it resolved for you.</p>
+                            <article class="item relative w-full" aria-labelledby="header_item_feature3">
+                                <div class="item-inner relative z-10 h-full bg-white rounded-4xl px-10 flex flex-col justify-end">
+                                    <div class="features-summary">
+                                        <h3 class="features-title" id="header_item_feature3"><strong>Free</strong> Returns</h3>
+                                        <p>If you have any issues with any of the products that you have bought from ourselves, then please contact us via email or phone and we will be happy to help and get it resolved for you.</p>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -264,10 +269,10 @@
                 </section>
 
                 <section class="section section-products products-list" aria-labelledby="header_section_products-list">
-                    <div class="inner-section">
-                        <div class="title-wrapper">
-                            <h2 class="section-products-title title" id="header_section_products-list">Latest Arrivals</h2>
-                            <h3 class="subtitle">Lorem ipsum dolor, sit amet</h3>
+                    <div class="container">
+                        <div class="flex flex-col items-center text-center py-40">
+                            <h2 class="mb-2 pb-2 font-light text-secondary text-2xl dots-divide" id="header_section_products-v1">Latest Arrivals</h2>
+                            <h3 class="font-medium text-4/5xl text-tertiary">Lorem ipsum dolor, sit amet</h3>
                         </div>
                         <div class="content-wrapper">
                             <div class="swiper-container sw2">
@@ -282,8 +287,8 @@
                                                 </picture>
                                             </figure> 
                                             <div class="item-product__summary">
-                                                <div class="price">£39.00</div>
-                                                <h4 class="product-title title" id="item_product_list_1">Slim Safety Light – TC972 – Pack of 2</h4>
+                                                <div class="product-price">£39.00</div>
+                                                <h4 class="product-name" id="item_product_list_1">Slim Safety Light – TC972 – Pack of 2</h4>
                                                 <div class="action-links">
                                                     <a href="index.html" class="action action-primary">
                                                         Shop Now 
@@ -303,8 +308,8 @@
                                                 </picture>
                                             </figure>                                         
                                             <div class="item-product__summary">
-                                                <div class="price">£39.00</div>
-                                                <h4 class="product-title title" id="item_product_list_2">Duo Cog Clock</h4>
+                                                <div class="product-price">£39.00</div>
+                                                <h4 class="product-name" id="item_product_list_2">Duo Cog Clock</h4>
                                                 <div class="action-links">
                                                     <a href="index.html" class="action action-primary">
                                                         Shop Now 
@@ -324,8 +329,8 @@
                                                 </picture>
                                             </figure>                                   
                                             <div class="item-product__summary">
-                                                <div class="price">£36.00</div>
-                                                <h4 class="product-title title" id="item_product_list_3">Spiral Clock</h4>
+                                                <div class="product-price">£36.00</div>
+                                                <h4 class="product-name" id="item_product_list_3">Spiral Clock</h4>
                                                 <div class="action-links">
                                                     <a href="index.html" class="action action-primary">
                                                         Shop Now 
@@ -345,9 +350,9 @@
 
                 <section class="section section-news" aria-labelledby="header_section_news">
                     <div class="inner-section">
-                        <div class="title-wrapper">                            
-                            <h2 class="section-news-title title" id="header_section_news">Latest News</h2>
-                            <h3 class="subtitle">Lorem ipsum dolor, sit amet</h3>
+                        <div class="flex flex-col items-center text-center py-40">
+                            <h2 class="mb-2 pb-2 font-light text-secondary text-2xl dots-divide" id="header_section_products-v1">Latest News</h2>
+                            <h3 class="font-medium text-4/5xl text-tertiary">Lorem ipsum dolor, sit amet</h3>
                         </div>
 
                         <div class="content-wrapper">

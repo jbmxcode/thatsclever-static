@@ -11,7 +11,6 @@
     }
 
     .menu li a {
-        @apply font-bold uppercase text-tertiary;
-        padding: 0 1.875rem;
+        @apply font-bold uppercase text-tertiary px-8;
     }
 }

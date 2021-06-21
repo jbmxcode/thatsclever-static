@@ -1,0 +1,43 @@
+.features {
+    .item {
+        max-width: 468px;
+        min-height: 400px;
+
+        &:before {
+            @apply absolute left-0 w-full h-full rounded-4xl;
+            content: "";
+            top: 1rem;
+            box-shadow: 0px 72px 100px rgba(183, 183, 183, 0.23);
+            background: rgba(255, 255, 255, 0.36);
+        }
+    }
+
+    .item-inner { 
+        background: {
+            image: url(../images/spotlight/dots-circles.png);
+            repeat: no-repeat;
+            size: cover;
+        }
+        box-shadow: 0px 72px 100px rgba(230, 230, 230, 0.23); 
+    }
+
+    .features-summary {
+        min-height: 250px;
+
+        p {
+            @apply font-light text-xl text-tertiary;
+            line-height: 143.4%;
+        }
+    }
+
+    .features-title {
+        @apply text-4xl font-black text-secondary pb-4;
+
+        strong { 
+            padding: .25rem .5rem;
+            border-radius: 5px;
+            color: black; 
+            background-color: var(--primary-color);
+        }
+    }
+}

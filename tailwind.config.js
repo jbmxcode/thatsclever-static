@@ -20,6 +20,10 @@ module.exports = {
             height: {
                 header: '100px',
             },
+            fontSize: {
+                '2/5xl': '1.625rem',
+                '4/5xl': '2.5rem',
+            },
             fontFamily: {
                 primary: 'Roboto, sans-serif',
                 secondary: 'Comfortaa, cursive',
@@ -33,17 +37,25 @@ module.exports = {
             letterSpacing: {
                 bigger: '0.6em',
             },
+            borderRadius: {
+                '4xl': '1.875rem',
+            },
+            boxShadow: {
+                base: '0px 0px 77px rgba(0, 0, 0, 0.1)',
+            },
             textColor: (theme) => ({
                 ...theme('colors'),
                 primary: '#FFEB0D',
                 secondary: '#82807F',
                 tertiary: '#3A3B3C',
+                grey: '#9E9E9E',
             }),
             backgroundColor: (theme) => ({
                 ...theme('colors'),
                 primary: '#FFEB0D',
                 secondary: '#82807F',
                 tertiary: '#3A3B3C',
+                grey: '#9E9E9E',
             }),
         },
     },

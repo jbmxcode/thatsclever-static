@@ -1,0 +1,26 @@
+.section-spotlight {
+    background: {
+        image: url(../images/spotlight/bg-spotlight.jpg);
+        repeat: no-repeat;
+        position: left bottom;
+        size: 100% auto;
+    }
+
+    .action-links {
+        max-width: 240px;
+    }
+}
+
+.spotlight-title {
+    max-width: 576px;
+}
+
+.spotlight-text {
+    max-width: 930px;
+
+    p { 
+        margin: 0 0 2rem;
+        
+        &:last-of-type { margin-bottom: 0; }
+    }
+}
