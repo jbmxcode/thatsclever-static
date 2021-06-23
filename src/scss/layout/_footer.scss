@@ -4,7 +4,7 @@
     .menu { @apply flex flex-wrap lg:flex-nowrap; }
 
     .footer-menu__block {
-        @apply flex-auto my-8;
+        @apply flex-auto my-2 lg:my-8;
 
         &:nth-child(1) .footer-menu__title:before { content: url(../images/icons/footer-customer-service.svg); }
         &:nth-child(2) .footer-menu__title:before { content: url(../images/icons/footer-information.svg); }
@@ -22,7 +22,7 @@
             li a { @apply text-tertiary; }
         }
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 400px) {
             &:last-child .items-list {
                 column-count: 2;
             }
@@ -33,5 +33,5 @@
 .footer-social {
     @apply flex;
 
-    a { @apply mr-4; }
+    a { @apply mx-2 lg:mr-4 lg:ml-0; }
 }

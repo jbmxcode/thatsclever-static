@@ -13,6 +13,10 @@
 
 .spotlight-title {
     max-width: 576px;
+
+    @media screen and (min-width: $vp-max) {
+        line-height: 3.5rem;
+    }
 }
 
 .spotlight-text {

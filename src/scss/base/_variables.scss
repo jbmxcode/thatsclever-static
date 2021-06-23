@@ -1,12 +1,19 @@
+$vp-small				            : 320px;
+$vp-mid				                : 768px;
+$vp-large				            : 1024px;
+$vp-max				                : 1350px;
+$site-width                         : 1524px;
+
 :root {
-    --vp-small				        : 320px;	// small size 
-    --vp-mid				        : 768px;	// mid size
-    --vp-large				        : 1024px;	// large size
-    --vp-max				        : 1350px;	// max viewport
-    --site-width                    : 1524px;
+    --vp-small				        : $vp-large;
+    --vp-mid				        : $vp-mid;
+    --vp-large				        : $vp-large;
+    --vp-max				        : $vp-max
+    --site-width                    : $site-width;
 
     --width-wrapper-logo            : 477px;
     --width-wrapper-logo-mobile     : 144px;
+    --width-wrapper-logo-tablet     : 300px;
     --width-header-actions          : 316px;
     --height-header                 : 100px;
 

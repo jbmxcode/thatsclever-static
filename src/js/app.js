@@ -19,7 +19,8 @@ const swiper1 = new Swiper('.sw1', {
 });
 
 const swiper2 = new Swiper('.sw2', {
-    slidesPerView: 1,
+    slidesPerView: 2,
+    spaceBetween: 20,
     loop: true,
     autoplay: {
         delay: 8000,
@@ -30,11 +31,11 @@ const swiper2 = new Swiper('.sw2', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        640: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 25,
         },
-        768: {
+        1024: {
             slidesPerView: 3,
             spaceBetween: 50,
         },

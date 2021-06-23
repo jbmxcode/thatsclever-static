@@ -1,14 +1,44 @@
 .delivery {
-    .home & {
-        @apply absolute bottom-0 right-0 z-40;
-        width: calc((((100% - var(--site-width)) / 2) + var(--site-width)) - var(--width-wrapper-logo));
+    position: relative;
+    z-index: 2;
+
+    .home & { 
+        @media screen and (min-width: $vp-max) {
+            @apply absolute bottom-0 right-0 z-40;
+            width: calc(100% - var(--width-wrapper-logo-tablet));            
+        }
+
+        @media screen and (min-width: $site-width) {
+            width: 100%;            
+        }
     }
 
     li {
-        @apply flex justify-between items-center p-4 text-lg;
+        @apply flex items-center justify-center text-center px-2 px-1 text-tertiary xl:flex-1 xl:justify-between xl:p-4 xl:flex-none;
 
-        svg, img { @apply mr-1; }
+        &:first-of-type { @apply justify-start text-left; }
+        &:last-of-type { @apply justify-end text-right; }
 
-        span { @apply text-tertiary; }
+        svg, img { @apply mr-1 hidden xl:block; }
+
+        strong { @apply block xl:inline-block; }
+
+        p {
+            font-size: .5rem;
+
+            strong {
+                font-size: 0.75rem;
+            }
+
+            @media screen and (min-width: 400px) {
+                font-size: 1rem;
+
+                strong { font-size: 1em; }
+            }
+
+            @media screen and (min-width: $vp-max) {
+                font-size: 1.125rem; 
+            }
+        }
     }
 }

@@ -1,7 +1,10 @@
 .features {
     .item {
         max-width: 468px;
-        min-height: 400px;
+        min-height: 200px;
+        position: relative;
+        width: 100%;
+        margin: 1rem;
 
         &:before {
             @apply absolute left-0 w-full h-full rounded-4xl;
@@ -10,9 +13,19 @@
             box-shadow: 0px 72px 100px rgba(183, 183, 183, 0.23);
             background: rgba(255, 255, 255, 0.36);
         }
+
+        @media screen and (min-width: $vp-max) {
+            min-height: 300px;     
+        }
+
+        @media screen and (min-width: $site-width) {
+            min-height: 400px;   
+            margin: 0;      
+        }
     }
 
     .item-inner { 
+        @apply relative z-10 h-full bg-white rounded-4xl p-4 flex flex-col justify-end lg:px-10 2xl:py-0;
         background: {
             image: url(../images/spotlight/dots-circles.png);
             repeat: no-repeat;
@@ -22,16 +35,17 @@
     }
 
     .features-summary {
+        @apply flex flex-col justify-end 2xl:justify-start;
         min-height: 250px;
 
         p {
-            @apply font-light text-xl text-tertiary;
+            @apply font-light text-lg text-tertiary lg:text-xl;
             line-height: 143.4%;
         }
     }
 
     .features-title {
-        @apply text-4xl font-black text-secondary pb-4;
+        @apply text-3xl font-black text-secondary pb-4 lg:text-4xl;
 
         strong { 
             padding: .25rem .5rem;
