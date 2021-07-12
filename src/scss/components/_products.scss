@@ -1,24 +1,30 @@
-.section-products { @apply overflow-hidden pb-10 px-2 lg:px-0; }
-
-.item-product { 
-    @apply rounded-4xl bg-white shadow-base my-4; 
-
-    .action-links { @apply lg:text-right; }
+.section-products {
+    @apply overflow-hidden pb-10 px-2 lg:px-0;
 }
 
-.item-product__summary { 
-    @apply flex flex-col justify-between flex-1 w-full px-2 py-4 lg:p-8 lg:h-full; 
-    min-height: 200px;
+.item-product {
+    @apply rounded-4xl bg-white shadow-base my-4;
 
-    @media screen and (min-width: $vp-max) {
-        min-height: 200px;
+    .action-links {
+        @apply lg:text-right;
     }
 }
 
-.item-product__summary-inner { @apply h-full leading-none; }
+.item-product__summary {
+    @apply flex flex-col justify-between flex-1 w-full px-2 py-4 lg:p-8 lg:h-full;
+    min-height: 200px;
 
-.item-product__image { 
-    @apply w-full overflow-hidden; 
+    @media screen and (min-width: $vp-max) {
+        min-height: 240px;
+    }
+}
+
+.item-product__summary-inner {
+    @apply h-full leading-none;
+}
+
+.item-product__image {
+    @apply w-full overflow-hidden;
     height: 26vh; //420px;
     border-radius: 10px 10px 0 0;
 
@@ -28,122 +34,154 @@
     }
 }
 
-.item-product__image img { @apply object-cover w-full h-full max-w-full; }
-
-.product-price { @apply text-xl text-tertiary; }
-.product-name { @apply text-base lg:text-2/5xl; }
-
-.product-link { 
-    @apply inline-flex justify-around items-center bg-primary rounded-full py-0.5 pl-4 pr-2 text-xs lg:pl-6 lg:pr-4; 
-
-    svg { @apply ml-2; }
+.item-product__image img {
+    @apply object-cover w-full h-full max-w-full;
 }
 
-.products-v1 {    
+.product-price {
+    @apply text-xl text-tertiary;
+}
+
+.product-name {
+    @apply text-base lg:text-2/5xl;
+
+    @media screen and (min-width: 1024px) {
+        line-height: 2rem;
+    }
+}
+
+.product-link {
+    @apply inline-flex justify-around items-center bg-primary rounded-full py-0.5 pl-4 pr-2 text-xs lg:pl-6 lg:pr-4;
+
+    svg {
+        @apply ml-2;
+    }
+}
+
+.products-v1 {
     .slide-inner {
         max-width: 500px;
         margin: 0 auto;
     }
 
     .slide-inner {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 0px 10px; 
-        grid-template-areas: 
-          "main-product main-product"
-          "first-product second-product"; 
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 10px;
+        grid-template-areas:
+            "main-product main-product"
+            "first-product second-product";
+
         .item-product {
-            &:nth-child(1) { grid-area: main-product; }
-            &:nth-child(2) { grid-area: first-product; }
-            &:nth-child(3) { grid-area: second-product; }
+            &:nth-child(1) {
+                grid-area: main-product;
+            }
+            &:nth-child(2) {
+                grid-area: first-product;
+            }
+            &:nth-child(3) {
+                grid-area: second-product;
+            }
         }
     }
 
     @media screen and (min-width: $vp-max) {
         .slide-inner {
-            grid-template-columns: 1fr 650px; 
-            grid-template-rows: 1fr auto; 
-            gap: 40px 40px; 
-            grid-template-areas: 
-            "main-product first-product first-product"
-            "main-product second-product second-product";
+            grid-template-columns: 1fr 650px;
+            grid-template-rows: 1fr auto;
+            gap: 40px 40px;
+            grid-template-areas:
+                "main-product first-product first-product"
+                "main-product second-product second-product";
             max-width: 100%;
         }
 
         .item-product {
             @apply flex flex-row-reverse items-center;
 
-            .action-links { @apply text-left; }
+            .action-links {
+                @apply text-left;
+            }
 
-            &:nth-child(1) { 
+            &:nth-child(1) {
                 @apply flex-col items-start;
 
-                .item-product__summary { @apply flex-row; }
+                .item-product__summary {
+                    @apply flex-row;
+                }
 
-                .item-product__summary-inner { @apply flex-1; } 
+                .item-product__summary-inner {
+                    @apply flex-1;
+                }
 
-                .item-product__image { height: 400px; }
+                .item-product__image {
+                    height: 400px;
+                }
 
-                .action-links { @apply place-self-end; }
+                .action-links {
+                    @apply place-self-end;
+                }
             }
 
             &:nth-child(2),
             &:nth-child(3) {
                 height: 272px;
 
-                .item-product__image { 
+                .item-product__image {
                     width: 360px;
-                    height: 100%; 
+                    height: 100%;
                     border-radius: 0 10px 10px 0;
 
                     @media screen and (min-width: $vp-max) {
                         border-radius: 0 30px 30px 0;
                     }
-                }              
+                }
             }
         }
     }
 }
 
-.sw1 {
-    &.swiper-container { @apply overflow-visible; }
+.swiper-container {
+    &.swiper-container {
+        @apply lg:py-7;
+        overflow: visible;
+    }
 
     .swiper-slide {
-        @apply opacity-0;
+        opacity: 0;
 
-        &.swiper-slide-active { @apply opacity-100; }
+        &.swiper-slide-visible {
+            opacity: 1;
+        }
     }
 }
 
-.sw2 {
-    &.swiper-container { @apply overflow-visible; }
-
-    .swiper-slide {
-        @apply opacity-0;
-
-        &.swiper-slide-active,
-        &.swiper-slide-next,
-        &.swiper-slide-duplicate-prev { @apply opacity-100; }
-    }
-}
-
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     top: auto;
     bottom: calc(100% - 10px);
     left: 0;
     right: auto;
     width: 40px;
     height: 40px;
+    transition: opacity 0.5s;
 
     &:before,
-    &:after { content: none; }
+    &:after {
+        content: none;
+    }
+
+    @include hover {
+        opacity: 0.5;
+    }
 }
 
-.swiper-button-prev { background-image: url(../images/arrow-prev.png); }
+.swiper-button-prev {
+    background-image: url(../images/arrow-prev.png);
+}
 
-.swiper-button-next { 
+.swiper-button-next {
     left: 50px;
-    background-image: url(../images/arrow-next.png); 
+    background-image: url(../images/arrow-next.png);
 }

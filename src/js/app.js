@@ -12,6 +12,7 @@ const swiper1 = new Swiper('.sw1', {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 100,
+    watchSlidesVisibility: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -26,6 +27,7 @@ const swiper2 = new Swiper('.sw2', {
         delay: 8000,
         disableOnInteraction: false,
     },
+    watchSlidesVisibility: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -37,7 +39,7 @@ const swiper2 = new Swiper('.sw2', {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
     },
 });

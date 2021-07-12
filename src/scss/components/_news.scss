@@ -1,27 +1,47 @@
 .section-news {
     @apply relative px-2 pb-24 lg:px-0;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
 
     .item {
         @apply bg-cover overflow-hidden mb-4 lg:overflow-visible lg:mb-8 xl:mx-16;
         border-radius: 10px;
 
-        &:last-child { @apply flex justify-center items-center; }
+        &.photo .summary:before {
+            @apply bg-black bg-opacity-50;
+        }
+
+        &.no-photo {
+            .summary {
+                color: black;
+
+                &:before {
+                    content: none;
+                }
+
+                .title {
+                    color: black;
+                }
+            }
+        }
+
+        &:last-child {
+            @apply flex justify-center items-center;
+        }
 
         .summary {
             @apply flex flex-col justify-end text-white px-4 pt-20 pb-8 lg:p-8 lg:mb-4;
 
-            > * { @apply relative; }
-
-            @include mask-fullsize {
-                @apply bg-black bg-opacity-50;
+            > * {
+                @apply relative;
             }
+
+            @include mask-fullsize;
         }
 
         .title {
             max-width: 556px;
             width: 100%;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             font: {
                 size: 1.5rem;
                 weight: 500;
@@ -29,15 +49,15 @@
             line-height: 1.25;
         }
 
-        .date { 
-            @apply absolute bottom-0 left-0 text-lg font-light uppercase; 
+        .date {
+            @apply absolute bottom-0 left-0 text-lg font-light uppercase;
             letter-spacing: 0.88em;
-            color: #9F9F9F;
+            color: #9f9f9f;
             transform-origin: left bottom;
             transform: rotate(-90deg);
         }
 
-        p { 
+        p {
             font: {
                 size: 1.125rem;
                 weight: 300;
@@ -53,18 +73,18 @@
             .summary {
                 @apply w-full h-full bg-cover;
             }
-            
+
             .title {
                 font-size: 2.3125rem;
             }
         }
 
         @media screen and (min-width: $vp-max) {
-            &:nth-child(3n+2) {
+            &:nth-child(3n + 2) {
                 @apply mt-40 mb-0;
 
                 .date {
-                    right: -28px;
+                    right: calc(-50% - 3rem);
                     left: auto;
                 }
             }
@@ -75,11 +95,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: .5rem 3rem;
+        padding: 0.5rem 3rem;
         font-size: 1.8125rem;
         border-radius: 30px;
-        background-color: #F0F0F0;
+        background-color: #f0f0f0;
 
-        svg { margin-left: .5rem; }
+        svg {
+            margin-left: 0.5rem;
+        }
     }
 }

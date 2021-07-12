@@ -1,0 +1,111 @@
+.woocommerce table.shop_table th {
+    background-color: var(--primary-color);
+}
+
+.woocommerce table.shop_table .order-total th {
+    background-color: #e1e1e1;
+}
+
+.checkout-button {
+    float: right;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    color: black;
+    background-color: var(--primary-color);
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.shop_table .product-name {
+    font-size: 1rem;
+}
+
+#coupon_code {
+    width: 130px;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+    border: 1px solid var(--grey);
+}
+
+.woocommerce form .form-row input.input-text,
+.select2-container--default .select2-selection--single {
+    height: 45px;
+    padding: 0.5rem;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered,
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.woocommerce form .form-row textarea {
+    height: 100px;
+    padding: 0.5rem;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+    background: transparent;
+}
+
+.checkout h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+form.woocommerce-checkout {
+    display: flex;
+    flex-direction: column;
+
+    .checkout-column {
+        flex: 1;
+    }
+
+    .col2-set {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .checkout-column {
+            &:last-child {
+                margin-left: 3rem;
+            }
+        }
+
+        .woocommerce-NoticeGroup-checkout {
+            flex: none;
+            width: 100%;
+        }
+    }
+}
+
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+    width: 100%;
+}

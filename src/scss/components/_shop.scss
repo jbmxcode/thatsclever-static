@@ -1,0 +1,167 @@
+.woocommerce .products ul,
+.woocommerce ul.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid var(--grey);
+    margin: 0;
+}
+
+.woocommerce .woocommerce-ordering:before,
+.woocommerce .woocommerce-result-count:before {
+    content: "";
+    position: relative;
+    left: -1px;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border: 1px solid var(--primary-color);
+    border-right-color: var(--grey);
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.woocommerce .woocommerce-ordering:before {
+    background-image: url("https://api.iconify.design/bi:sort-down.svg?width=25&height=25");
+}
+
+.woocommerce .woocommerce-result-count:before {
+    background-image: url("https://api.iconify.design/fluent:list-28-regular.svg?width=25&height=25");
+}
+
+.woocommerce .woocommerce-result-count {
+    padding: 0 1rem 0 0;
+}
+
+.woocommerce .woocommerce-ordering select {
+    height: 100%;
+    cursor: pointer;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 2rem 0.5rem;
+    border-radius: 1.875rem;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.woocommerce ul.products li.product a {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+    order: 3;
+    margin: 0;
+    padding: 0 1rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.woocommerce ul.products li.product .price {
+    order: 2;
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #3a3b3c;
+}
+
+.woocommerce ul.products li.product a img {
+    order: 1;
+    height: 345px;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.woocommerce ul.products li.product .button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;
+    padding: 0rem 1rem 0 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-radius: 9999px;
+    color: black;
+    background-color: rgb(255, 235, 13);
+}
+
+.woocommerce a.added_to_cart {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    padding: 0.22rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-radius: 9999px;
+    color: black;
+    background-color: rgb(255, 235, 13);
+}
+
+.woocommerce ul.products li.product .button:after {
+    content: url(http://localhost/projects/rigorous/002-redesign/thatsclever/wp-content/uploads/2021/06/product-link.svg);
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+    padding: 1rem 2rem;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    color: black;
+    background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .woocommerce .woocommerce-result-count {
+        margin-left: 1rem;
+    }
+
+    .woocommerce .woocommerce-ordering {
+        margin-right: 1rem;
+    }
+
+    .woocommerce .products ul,
+    .woocommerce ul.products {
+        justify-content: space-between;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        flex: 0 1 calc(25% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .woocommerce ul.products li.product .price {
+        padding: 0 2rem;
+    }
+
+    .woocommerce ul.products li.product .woocommerce-loop-category__title,
+    .woocommerce ul.products li.product .woocommerce-loop-product__title,
+    .woocommerce ul.products li.product h3 {
+        padding: 0 2rem 4rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}

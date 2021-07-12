@@ -1,4 +1,4 @@
-.site-header {  
+.site-header {
     position: relative;
     border-left: 0.625rem solid white;
     border-right: 0.625rem solid var(--primary-color);
@@ -6,49 +6,31 @@
     &:before {
         content: "";
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
         width: calc((100% - #{$site-width}) / 2);
         height: 100%;
         background-color: white;
-    } 
+    }
 
     @media screen and (min-width: $vp-max) {
         border: 0;
-    }
-}
-
-.site-branding {
-    border-right: 1rem solid white;
-
-    @media screen and (min-width: 400px) {
-        border-right: 2rem solid white;
-    }
-
-    @media screen and (min-width: $vp-max) {
-        border-right: 0;
     }
 }
 
 .site-logo {
-    width: 100px;
-    border: {
-        top: 0.625rem solid white;
-        bottom: 0.625rem solid white;
-    }
-
-    @media screen and (min-width: 400px) {
-        width: var(--width-wrapper-logo-mobile);
-    }
+    width: var(--width-wrapper-logo);
+    margin: 0 auto;
+    background-color: white;
 
     @media screen and (min-width: $vp-large) {
-        border: 0;
+        margin: 0;
     }
 }
 
 .header-action-user,
-.btn-menu-toggle { 
-    width: 40px; 
+.btn-menu-toggle {
+    width: 40px;
     height: 40px;
 
     @media screen and (min-width: $vp-max) {
@@ -56,11 +38,13 @@
     }
 }
 
-.header-actions-wrapper { 
-    margin-right: 42px; 
+.header-actions-wrapper {
+    margin-right: 42px;
     border-left: 0.625rem solid var(--primary-color);
 
-    ul { max-width: 200px; }
+    ul {
+        max-width: 100%;
+    }
 
     .icon-star svg {
         width: 18px;
@@ -70,8 +54,6 @@
 
     @media screen and (min-width: $vp-max) {
         border-left: 0;
-
-        ul { max-width: 100%; }
 
         .icon-star svg {
             width: 24px;
@@ -86,23 +68,41 @@
     }
 }
 
-.primary-menu-wrapper {
+.btn-menu-toggle {
+    top: calc(100% - (40px + 0.625rem));
     right: 0;
 
+    @media screen and (min-width: $vp-mid) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.primary-menu-wrapper {
     @media screen and (min-width: $vp-max) {
         right: var(--width-header-actions);
-        width: calc(100% - (var(--width-wrapper-logo-tablet) + var(--width-header-actions)));
+        width: calc(
+            100% - (var(--width-wrapper-logo) + var(--width-header-actions))
+        );
     }
 
     @media screen and (min-width: $site-width) {
         right: var(--width-header-actions);
-        width: calc((100% - var(--width-header-actions)) - var(--width-wrapper-logo) - ((100% - #{$site-width}) / 2));
+        width: calc(
+            (100% - var(--width-header-actions)) - var(--width-wrapper-logo) -
+                ((100% - #{$site-width}) / 2)
+        );
     }
 }
 
 .primary-menu {
     @apply flex items-center w-full h-full hidden xl:block;
 
-    .menu { @apply flex justify-center items-center w-full h-full; }
-    .menu li a { @apply font-bold uppercase text-tertiary px-8; }
+    .menu {
+        @apply flex justify-center items-center w-full h-full;
+    }
+
+    .menu li a {
+        @apply font-bold uppercase text-tertiary px-4 2xl:px-8;
+    }
 }
