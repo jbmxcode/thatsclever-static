@@ -1,28 +1,44 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 // Base
 @import "base/fonts";
 @import "base/variables";
-@import "base/base";
 @import "base/mixins";
 @import "base/effects";
+@import "base/base";
 
 // layout
 @import "layout/header";
 @import "layout/footer";
+@import "layout/menu";
+@import "layout/heading";
+@import "layout/content";
 
 // Components
+@import "components/blocks";
+@import "components/breadcrumbs";
 @import "components/checkout";
 @import "components/delivery";
 @import "components/features";
-@import "components/heading";
 @import "components/hero";
+@import "components/navigation";
 @import "components/news";
+@import "components/newsletter";
 @import "components/products";
 @import "components/shop";
 @import "components/spotlight";
 
 // Utils
+@import "utils/alignment";
 @import "utils/borders";
+@import "utils/buttons";
+@import "utils/display";
+@import "utils/spacing";
+
+// Widgets
+@import "widgets/news";
+
+// Pages 
+@import "pages/about";
+@import "pages/blog";
+@import "pages/contact";
+@import "pages/single";
+@import "pages/product";

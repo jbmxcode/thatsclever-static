@@ -1,28 +1,39 @@
-$vp-small				            : 320px;
-$vp-mid				                : 768px;
-$vp-large				            : 1024px;
-$vp-max				                : 1350px;
-$site-width                         : 1524px;
+$vp-small: 320px;
+$vp-mid: 768px;
+$vp-large: 1024px;
+$vp-xlarge: 1280px;
+$vp-max: 1350px;
+$site-width: 1524px;
 
 :root {
-    --vp-small				        : $vp-large;
-    --vp-mid				        : $vp-mid;
-    --vp-large				        : $vp-large;
-    --vp-max				        : $vp-max
-    --site-width                    : $site-width;
+    --vp-small: #{$vp-small};
+    --vp-mid: #{$vp-mid};
+    --vp-large: #{$vp-large};
+    --vp-xlarge: #{$vp-xlarge};
+    --vp-max: #{$vp-max};
+    --site-width: #{$site-width};
 
-    --width-wrapper-logo            : 477px;
-    --width-wrapper-logo-mobile     : 126px;
-    --width-wrapper-logo-tablet     : 300px;
-    --width-header-actions          : 316px;
-    --height-header                 : 100px;
+    --width-wrapper-logo: 29.8125rem;
+    --width-wrapper-logo-mobile: 7.875rem;
+    --width-wrapper-logo-tablet: 18.75rem;
+    --width-header-actions: 19.75rem;
+    --width-header-actions-tablet: 15.625rem;
+    --width-aside: 29rem;
+    --height-header: 6.25rem;
+    --height-menu: 5rem;
+    --height-news-categories: 20.25rem;
 
-    --base-font-size		        : 16px;
-    --primary-font                  : 'Roboto', sans-serif;
-    --secondary-font                : 'Comfortaa', cursive;
-    
-    --primary-color                 : rgb(255, 235, 13);
-    --secondary-color               : rgb(130, 128, 127);
-    --tertiary-color                : rgb(58, 59, 60);
-    --grey                          : rgb(158, 158, 158);
+    --base-font-size: 16px;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Comfortaa", cursive;
+
+    --primary-color: rgb(255, 235, 13);
+    --secondary-color: rgb(58, 59, 60);
+    --tertiary-color: rgb(130, 128, 127);
+    --grey: rgb(158, 158, 158);
+    --grey-light: rgb(241, 241, 241);
+    --grey-xlight: rgb(247, 247, 247);
+    --brand-secondary-color: rgb(72, 192, 216);
+
+    --base-shadow: 0px 0px 77px rgba(0, 0, 0, 0.1);
 }

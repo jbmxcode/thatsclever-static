@@ -1,0 +1,39 @@
+body.single {
+    .page-header { height: 80vh; }
+    .page-header__inner { padding-bottom: 5rem; }
+    
+    .page-summary__content {
+        .container {
+            .content {
+                padding: 2rem;
+                box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+    }
+
+    .action-links {
+        text-align: center;
+    }
+
+    .action-news {
+        font-size: 1.25rem;
+        color: black;
+        background-color: var(--primary-color);
+    }
+
+    @media screen and (min-width: $vp-large) {
+        .page-summary__content {
+            .container {
+                padding-top: 0;
+
+                .content { 
+                    margin: -3.125rem auto 0; 
+                    background-color: white;
+                }
+            }
+        }
+
+        .page-widgets { top: 4rem; }
+    }
+}

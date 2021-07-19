@@ -1,0 +1,122 @@
+.primary-menu-wrapper {
+    @media screen and (min-width: $vp-xlarge) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: var(--height-menu);
+        margin: auto 0;
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    @media screen and (min-width: $vp-max) {
+        right: var(--width-header-actions);
+        width: calc(
+            100% - (var(--width-wrapper-logo) + var(--width-header-actions))
+        );
+    }
+
+    @media screen and (min-width: $site-width) {
+        right: var(--width-header-actions);
+        width: calc(
+            (100% - var(--width-header-actions)) - var(--width-wrapper-logo) -
+                ((100% - #{$site-width}) / 2)
+        );
+    }
+}
+
+.primary-menu {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    background-color: var(--primary-color);
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li {
+        width: 100%;
+
+        &:last-child {
+            svg { display: none; }
+        }
+
+        a {
+            display: block;
+            margin: .25rem 0;
+            padding: 0 2rem;
+            font-size: 1.125rem; 
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+    }
+
+    @media screen and (min-width: $vp-xlarge) {
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+
+        .menu { 
+            flex-direction: row; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu li {
+            width: auto;
+
+            &:last-child { 
+                svg { display: block; }
+                span { @include hidden; }
+            }
+
+            a {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media screen and (min-width: $site-width) {
+        .menu li a {
+            padding: 0 2rem;
+        }
+    }
+}
+
+.btn-menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - (40px + 0.625rem));
+    right: .625rem;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+
+    @media screen and (min-width: $vp-large) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media screen and (min-width: $vp-xlarge) {
+        display: none;
+    }
+}

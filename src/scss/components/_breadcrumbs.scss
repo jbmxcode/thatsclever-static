@@ -1,0 +1,28 @@
+.breadcrumbs {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            font-size: .75rem;
+            line-height: .875rem;
+            color: var(--tertiary-color);
+            
+            &:after {
+                content: "/";
+                padding: 0 .25rem;
+            }
+
+            &:last-child {
+                color: black;
+                
+                &:after { content: none; }
+            }
+
+            a { text-decoration: none; }
+        } 
+    }
+}

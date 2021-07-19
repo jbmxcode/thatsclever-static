@@ -1,0 +1,15 @@
+.action-news {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8125rem;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+
+    svg {
+        margin-left: 0.5rem;
+    }
+}

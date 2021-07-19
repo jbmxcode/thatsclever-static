@@ -1,4 +1,6 @@
 .section-spotlight {
+    position: relative;
+    padding: 4rem 0;
     background: {
         image: url(../images/spotlight/bg-spotlight.jpg);
         repeat: no-repeat;
@@ -6,13 +8,102 @@
         size: 100% auto;
     }
 
+    .container { padding: 0; }
+
     .action-links {
         max-width: 240px;
+    }
+
+    @media screen and (min-width: $vp-large) {
+        padding: 10rem 0 0;
+    }
+}
+
+.spotlight-image {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width: $vp-xlarge) {
+        display: block;
+        top: 15rem;
+        left: auto;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+
+    @media screen and (min-width: $vp-max) {
+        width: 1045px;
+        height: 705px;
+        border-radius: 30px 0 0 30px;
+    }
+}
+
+.spotlight-summary {
+    position: relative;
+    z-index: 10;
+    color: white;
+    @include bg-cover;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .action-links {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $vp-xlarge) {
+        color: black;
+        background-image: none !important;
+
+        .action-links {
+            position: absolute;
+            top: calc(100% - 1rem);
+            left: 100%;
+            margin-left: 2rem;
+        }
     }
 }
 
 .spotlight-title {
+    position: relative;
     max-width: 576px;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 1.25rem;
+    font-weight: 300;
+    line-height: 2.125rem;
+
+    @media screen and (min-width: $vp-large) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: $vp-xlarge) {
+        margin-bottom: 3rem;
+        padding: 2rem 2rem 3rem 0;
+    }
 
     @media screen and (min-width: $vp-max) {
         line-height: 3.5rem;
@@ -22,6 +113,12 @@
 .spotlight-text {
     position: relative;
     max-width: 930px;
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2rem;
+    border-radius: 20px;
 
     &:before {
         content: "";
@@ -40,13 +137,31 @@
             margin-bottom: 0;
         }
     }
+
+    strong { font-weight: 500; }
+
+    @media screen and (min-width: $vp-large) {
+        padding: 2rem 2rem 2rem 0;
+        font-size: 1.5rem;
+        background-color: white;
+    }
 }
 
-.spotlight-image {
-    overflow: hidden;
-    border-radius: 10px;
+.spotlight-link {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 
-    @media screen and (min-width: $vp-max) {
-        border-radius: 30px 0 0 30px;
+    @media screen and (min-width: $vp-large) {
+        margin-top: 0;
     }
 }
