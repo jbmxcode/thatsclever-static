@@ -9,10 +9,6 @@
         background-color: white;
     }
 
-    @media screen and (min-width: $vp-large) {
-        width: calc((100% - #{$site-width}) / 2);
-    }
-
     .action-links {
         display: flex;
         justify-content: center;
@@ -54,6 +50,25 @@
         text-transform: uppercase;
         color: var(--primary-color);
         background-color: var(--secondary-color);
+    }
+
+    @media screen and (min-width: $vp-large) {
+        &:before { width: calc((100% - #{$site-width}) / 2); }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top:0; 
+            left: calc((100% - var(--site-width)) / 2);
+            width: var(--width-wrapper-logo);
+            height: 100%;
+            background-color: white;
+        }
+
+        > div {
+            position: relative;
+            z-index: 2;
+        }
     }
     
     @media screen and (min-width: $vp-max) {
@@ -131,7 +146,7 @@
 }
 
 .hero-summary__name {
-    @include scale-font($small-ratio: .25, $mid-ratio: .75, $final-size: 4.1875rem);
+    @include scale-font($small-ratio: .25, $mid-ratio: .5, $final-size: 4.1875rem);
     display: flex;
     flex-direction: column;
     font-family: var(--secondary-font);

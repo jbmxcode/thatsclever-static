@@ -64,7 +64,7 @@
         }
     }
 
-    @media screen and (min-width: $vp-xlarge) {
+    @media screen and (min-width: $vp-max) {
         display: block;
         position: relative;
         top: auto;
@@ -116,7 +116,7 @@
         transform: translateY(-50%);
     }
 
-    @media screen and (min-width: $vp-xlarge) {
-        display: none;
+    @media screen and (min-width: $vp-max) {
+        // display: none;
     }
 }

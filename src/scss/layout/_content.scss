@@ -29,12 +29,15 @@
 }
 
 .page-summary__body {
-    display: grid;
-    gap: 0 2.1875rem;
-    grid-template-columns: minmax(72.75rem, 1fr) 1fr;
     max-width: $site-width;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (min-width: $vp-max) {
+        display: grid;
+        gap: 0 2.1875rem;
+        grid-template-columns: minmax(min(100%, 72.75rem), 1fr) 1fr;        
+    }
 }
 
 .page-summary__content {

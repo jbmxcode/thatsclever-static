@@ -12,18 +12,19 @@
     }
 
     .news-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 788px), 1fr));
 
-        @media screen and (min-width: $vp-max) {
+        @media screen and (min-width: 1680px) {
             justify-content: center;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 788px), 1fr));
         }
     }
 
     .item {
         overflow: hidden;
-        margin-bottom: 1rem;
+        margin: 0 auto;
         background-size: cover;
         border-radius: 20px;
 
@@ -59,6 +60,7 @@
             padding: 5rem 1rem 2rem;
             color: white;
             border-radius: 20px;
+            @include bg-cover;
 
             > * {
                 position: relative;
@@ -99,9 +101,8 @@
         }
 
         @media screen and (min-width: $vp-large) {
-            width: 41vw;
+            // max-width: 788px;
             height: 77vh;
-            margin-bottom: 2rem;
             border-radius: 0;
             overflow: visible;
 
@@ -128,28 +129,31 @@
             }
         }
 
-        @media screen and (min-width: $vp-xlarge) {
-            margin: {
-                left: 4rem;
-                right: 4rem;
-            }
-        }
-
-        @media screen and (min-width: $vp-max) {
+        @media screen and (min-width: 1680px) {
             &:nth-child(3n + 2) {
                 margin: 10rem 4rem 0;
 
-                .date {
-                    right: calc(-50% - 3rem);
-                    left: auto;
-                }
+                // .date {
+                //     right: calc(-50% - 3rem);
+                //     left: auto;
+                // }
             }
         }
     }
 }
 
 .popular-news-list {
-    .item-inner { display: flex; }
+    .item-inner { 
+        display: flex; 
+
+        @media screen and (min-width: $vp-large) {
+            flex-wrap: wrap;            
+        }
+
+        @media screen and (min-width: $vp-max) {
+            flex-wrap: nowrap;            
+        }
+    }
 
     .item {
         margin-bottom: 2rem;
@@ -163,16 +167,21 @@
 
         img {
             display: block;
-            width: 168px;
-            height: 160px;
+            width: 100px;
+            height: 90px;
             margin-right: 1rem;
             border-radius: 20px;
+
+            @media screen and (min-width: $vp-large) {
+                width: 168px;
+                height: 160px;       
+            }
         }
     }
 
     .item-summary {
         .title {
-            margin-bottom: 0;
+            margin: 0;
             font-size: 1.25rem;
             line-height: 141.9%;
 

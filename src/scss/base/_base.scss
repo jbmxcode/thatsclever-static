@@ -20,6 +20,7 @@ body {
 
     @media screen and (min-width: $site-width) {
         max-width: $site-width;
+        padding: 0;
     }
 }
 

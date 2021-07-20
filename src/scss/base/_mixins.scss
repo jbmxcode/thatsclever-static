@@ -445,7 +445,7 @@
 	font-size: $small-ratio * $final-size;
 
 	@include respond-to($vp-mid) { font-size: $mid-ratio * $final-size; }
-	@include respond-to($vp-large) { font-size: $final-size; }
+	@include respond-to($vp-max) { font-size: $final-size; }
 }
 
 // Converts a px size value to an equivalent em ratio.

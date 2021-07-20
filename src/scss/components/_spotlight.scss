@@ -36,7 +36,7 @@
         object-fit: cover;
     }
 
-    @media screen and (min-width: $vp-xlarge) {
+    @media screen and (min-width: $vp-max) {
         display: block;
         top: 15rem;
         left: auto;
@@ -74,13 +74,15 @@
         width: 100%;
     }
 
-    @media screen and (min-width: $vp-xlarge) {
+    @media screen and (min-width: $vp-max) {
         color: black;
-        background-image: none !important;
+        background-image: none !important;   
+
+        &:before { content: none; }  
 
         .action-links {
             position: absolute;
-            top: calc(100% - 1rem);
+            top: calc(100% - 3rem);
             left: 100%;
             margin-left: 2rem;
         }
@@ -89,7 +91,6 @@
 
 .spotlight-title {
     position: relative;
-    max-width: 576px;
     width: 100%;
     margin: 0;
     padding: 2rem 1.25rem;
@@ -97,22 +98,20 @@
     line-height: 2.125rem;
 
     @media screen and (min-width: $vp-large) {
-        font-size: 2.5rem;
-    }
-
-    @media screen and (min-width: $vp-xlarge) {
         margin-bottom: 3rem;
-        padding: 2rem 2rem 3rem 0;
+        padding: 2rem 2rem 3rem;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
     }
 
     @media screen and (min-width: $vp-max) {
-        line-height: 3.5rem;
+        max-width: 576px;
+        padding-left: 0;
     }
 }
 
 .spotlight-text {
     position: relative;
-    max-width: 930px;
     width: 100%;
     padding: 1.25rem;
     font-size: 1.25rem;
@@ -141,8 +140,13 @@
     strong { font-weight: 500; }
 
     @media screen and (min-width: $vp-large) {
-        padding: 2rem 2rem 2rem 0;
+        padding: 2rem;
         font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: $vp-max) {
+        max-width: 930px;
+        padding-left: 0;
         background-color: white;
     }
 }
@@ -161,7 +165,7 @@
     color: var(--secondary-color);
     background-color: var(--primary-color);
 
-    @media screen and (min-width: $vp-large) {
+    @media screen and (min-width: $vp-max) {
         margin-top: 0;
     }
 }
